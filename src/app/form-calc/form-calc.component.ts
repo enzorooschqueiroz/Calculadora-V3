@@ -46,6 +46,8 @@ export class FormCalcComponent {
     if(this.operation == "potência"){
       this.result = this.num1**this.num2;
     }
-  }
+    if (this.operation == "porcentagem"){
+      this.result = (this.num2*100) / this.num1;
+    }
+ }
 }
-
